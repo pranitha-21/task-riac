@@ -56,7 +56,7 @@ ROOT_URLCONF = 'riac.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'task/Templates'],
+        'DIRS': [BASE_DIR / 'task'/'Templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
