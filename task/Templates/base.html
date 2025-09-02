@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}SVNIT RIAC{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <header>
+  <div class="container header-flex">
+    <div class="branding">
+      <a href="{% url 'home' %}" class="logo-title">
+        <img src="https://www.riac-svnit.in/pictures/riac-logo.png" alt="RIAC Logo">
+        <div class="title-text">
+          <h1>SVNIT RIAC</h1>
+          <p class="tagline">Research & Innovation Cell</p>
+        </div>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'committees' %}">Committees</a></li>
+        <li><a href="{% url 'events' %}">Events</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+    <div class="container fade-in">
+        <div class="footer-contact">
+            <h3>Contact & Connect</h3>
+            <p><strong>Email:</strong> riac@svnit.ac.in</p>
+            <p><strong>Location:</strong> RIAC, SVNIT Campus, Surat, Gujarat 395007</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/riac_svnit/" target="_blank" class="icon instagram">Instagram</a>
+                <a href="https://in.linkedin.com/company/svnit-research-and-innovation-cell" target="_blank" class="icon linkedin">LinkedIn</a>
+            </div>
+        </div>
+        <p class="copyright">© 2025 SVNIT RIAC.</p>
+    </div>
+</footer>
+
+    <script>
+        // Simple scroll reveal animation
+        const faders = document.querySelectorAll('.fade-in');
+        const appearOptions = { threshold: 0.1 };
+        const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('appear');
+                observer.unobserve(entry.target);
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => appearOnScroll.observe(fader));
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Events | SVNIT RIAC{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'event.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="section fade-in">
+    <h2>Flagship Events</h2>
+    <p>RIAC organizes transformative events that empower students, researchers, and entrepreneurs. These programs foster innovation, industry collaboration, and academic excellence across SVNIT.</p>
+
+    <div class="grid">
+        <div class="card">
+            <h3>🔬 Research & Innovation Conclave</h3>
+            <p><strong>Overview:</strong> A premier platform for showcasing interdisciplinary research and breakthrough ideas. The conclave includes poster presentations, expert talks, and workshops on patent filing, funding, and technical writing.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+                <li>Poster Presentation Competition with awards</li>
+                <li>Sessions on IP, patents, and funding strategies</li>
+                <li>Talks by industry experts and faculty researchers</li>
+                <li>Networking with academia and industry</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🚀 Startup Expo</h3>
+            <p><strong>Overview:</strong> A dynamic showcase for student-led startups to pitch ideas, connect with investors, and gain mentorship. The expo features Pitching Mania, Influencer Summit, and boardroom discussions with VCs and founders.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+                <li>Startup Pitching to angel investors and VCs</li>
+                <li>Entrepreneur Panel Discussions with Shark Tank alumni</li>
+                <li>Creator Collab with influencers and brand strategists</li>
+                <li>Investor feedback and startup awards</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🌐 Capstone Connect</h3>
+            <p><strong>Overview:</strong> A global networking event uniting researchers, industry professionals, and final-year students. Capstone Connect focuses on career development, collaboration, and showcasing capstone projects.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+                <li>Keynote panels with global experts</li>
+                <li>Direct networking with industry mentors</li>
+                <li>Capstone project showcases and feedback</li>
+                <li>Career guidance and professional development</li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

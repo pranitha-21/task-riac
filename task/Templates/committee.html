@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Committees | SVNIT RIAC{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'committees.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="section fade-in">
+    <h2>RIAC Committees</h2>
+    <p>RIAC operates through specialized committees, each contributing to research, innovation, outreach, and digital excellence across SVNIT. Here’s how they work together:</p>
+
+    <div class="grid">
+        <div class="card">
+            <h3>🔬 Research & Development</h3>
+            <ul>
+                <li>Organizes workshops, paper-writing sessions, and research conclaves</li>
+                <li>Connects students with faculty-led projects and external research bodies</li>
+                <li>Promotes interdisciplinary collaboration and academic rigor</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🚀 Innovation & Entrepreneurship</h3>
+            <ul>
+                <li>Hosts hackathons, startup expos, and incubation programs</li>
+                <li>Drives entrepreneurial thinking and business model development</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>📢 Public Relations & Outreach</h3>
+            <ul>
+                <li>Manages RIAC’s social media and external communication</li>
+                <li>Promotes events through reels, posters, and influencer collabs</li>
+                <li>Builds strategic partnerships and alumni engagement</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🎨 Design & Media</h3>
+            <ul>
+                <li>Creates posters, animations, and promotional graphics</li>
+                <li>Supports video editing, branding, and digital storytelling</li>
+                <li>Maintains visual consistency across campaigns</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>💻 Web Development</h3>
+            <ul>
+                <li>Develops and maintains the official RIAC website</li>
+                <li>Implements backend systems for registration and updates</li>
+                <li>Ensures smooth digital experience and accessibility</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🧠 Content & Editorial</h3>
+            <ul>
+                <li>Crafts written content for posts, blogs, and documentation</li>
+                <li>Handles technical writing, press releases, and reports</li>
+                <li>Collaborates with PR and Design for cohesive messaging</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>📊 Data & Analytics</h3>
+            <ul>
+                <li>Tracks engagement metrics and event participation</li>
+                <li>Analyzes feedback and outreach performance</li>
+                <li>Supports decision-making with data-driven insights</li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

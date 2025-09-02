@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home | SVNIT RIAC{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'home.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="top-strip fade-in">
+  <h1>Welcome to RIAC</h1>
+  <p>Research & Innovation at SVNIT Surat</p>
+</section>
+<section class="about-mission-section fade-in">
+  <div class="about-box">
+    <h2>About SVNIT</h2>
+    <p>Established in 1961, SVNIT is one of India’s premier technical institutions...</p>
+
+    <h2>About RIAC</h2>
+    <p>RIAC bridges academia and industry, nurturing talent and fostering impactful solutions...</p>
+  </div>
+
+  <div class="mission-box">
+    <h2>Our Mission</h2>
+    <ul>
+      <li><strong>Empowering Innovation:</strong> Support groundbreaking research...</li>
+      <li><strong>Fostering Talent:</strong> Nurture skilled professionals...</li>
+      <li><strong>Collaborative Growth:</strong> Promote partnerships...</li>
+      <li><strong>Driving National Progress:</strong> Transform ideas into innovations...</li>
+    </ul>
+  </div>
+</section>
+
+{% endblock %}
