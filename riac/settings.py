@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-7!*3*#u(7+2f#k=1-0=7wmo#n!e)mfm5)gp$w4!p9q@rverv7$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['task-riac.onrender.com']
 
 
 # Application definition
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'riac.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'Templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -115,9 +115,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'task' / 'static']
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 # Default primary key field type
